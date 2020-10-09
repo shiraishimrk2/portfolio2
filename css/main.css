@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+}
+
+/* ----------------- header ↓ -------------- */
+.mainvisual {
+    background-color: white;
+    height: 812px;
+    text-align: center;
+    width: 100%;
+}
+
+.mainvisual__name {
+    background: url(../img/nameL.jpg) no-repeat;
+    display: inline-block;
+    height: 50px;
+    margin-top: 300px;
+    width: 235px;
+}
+
+.mainvisual__sub-title {
+    background: url(../img/portfolio.jpg)no-repeat;
+    height: 30px;
+    margin: 0 auto;
+    width: 120px;
+}
+
+/* -------------- main ↓　------------- */
+main {
+    background-color: #EEEEEE;
+    padding-top: 150px;
+    padding-bottom: 1%;
+}
+
+h2 span {
+    display: inline-block;
+    padding: 0 0.5em;
+    position: relative;
+}
+
+h2 span::before,
+h2 span::after {
+    background-color: black;
+    content: '';
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    width: 1.5em;
+}
+
+h2 span::before {
+    left: 100%;
+}
+
+h2 span::after {
+    right: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+/* -------------------- 自己紹介 ↓ --------------------- */
+.Self-introduction,
+.work {
+    margin-bottom: 150px;
+}
+
+.Self-introduction__title,
+.Work__title {
+    text-align: center;
+}
+
+.title-effect {
+    background-color: #EEEEEE;
+    margin: 0 auto;
+    position: relative;
+    top: 13px;
+    width: 150px;
+}
+
+.Self-introduction-grid {
+    margin-bottom: 7%
+}
+
+.Self-introduction-grid__face-pic {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.Self-introduction-grid__profile {
+    margin-top: 50px;
+}
+
+.face-pic-circle {
+    border-radius: 50%;
+}
+
+.Self-introduction-grid__profile-container {
+    border: solid 0.7px #707070;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.profile-container-list {
+    line-height: 50px;
+}
+
+
+/* ----------------- 作品紹介 ↓ ----------------- */
+
+
+.Work__HTML-CSS,
+.Work__JavaScript,
+.Web {
+    margin-top: 50px;
+}
+
+.Self-introduction-greeting,
+.HTML-CSS__inner,
+.JavaScript__inner,
+.Web__inner {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.inner-link-container {
+    background-color: #FFFFFF;
+    box-shadow: 2px 4px 3px -3px rgb(12, 11, 11);
+    border-radius: 5px;
+    display: inline-block;
+    height: 250px;
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+    width: 350px;
+}
+
+.inner-link-container:hover {
+    box-shadow: 0 10px 10px -10px black;
+    transform: scale(1.07);
+}
+
+.inner-link-container__pic--HC {
+    background: url(../img/HTML_CSS_logo.png) no-repeat;
+    height: 115px;
+    left: 16%;
+    position: absolute;
+    top: 28%;
+    width: 240px;
+}
+
+.inner-link-container__pic--JS {
+    background: url(../img/JavaScript_logo.png) no-repeat;
+    height: 115px;
+    left: 35%;
+    position: absolute;
+    top: 28%;
+    width: 110px;
+}
+
+.inner-link-container__pic--Web {
+    background: url(../img/top22.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 250px;
+    position: absolute;
+    width: 350px;
+}
+
+dd {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin: 0 0 30px 20px;
+}
+
+.footer {
+    background-color: white;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* ----------- font ↓ ---------- */
+.Self-introduction__title,
+.Work__title {
+    font-size: 2rem;
+    font-family: "Helvetica Neue",
+        "Helvetica",
+        "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN",
+        "Arial",
+        "Yu Gothic",
+        "Meiryo",
+        sans-serif;
+}
+
+.title {
+    font-size: 23px;
+}
+
+.thanks {
+    font-size: 1.3rem
+}
+
+.title,
+.thanks {
+    font-family: "Helvetica Neue",
+        "Helvetica",
+        "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN",
+        "Arial",
+        "Yu Gothic",
+        "Meiryo",
+        sans-serif;
+}
+
+.Self-introduction-greeting,
+dd {
+    font-family: serif
+}
+
+dt {
+    font-family: "游ゴシック Large",
+        "Yu Gothic Medium",
+        "游ゴシック体",
+        "YuGothic",
+        "ヒラギノ角ゴ ProN W3",
+        "Hiragino Kaku Gothic ProN",
+        "メイリオ",
+        "Meiryo",
+        "verdana",
+        sans-serif;
+    font-size: 18px;
+}
+
+
+@media (min-width: 768px) {
+
+    .Self-introduction {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+
+    .Self-introduction-grid,
+    .Work__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+
+    .Self-introduction-greeting {
+        margin: 0 auto;
+        width: 950px;
+    }
+
+    .Work__HTML-CSS dt:first-child+dd {
+        margin-bottom: 82px;
+    }
+
+}

@@ -1,0 +1,637 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ------------------------ mainvisual ↓ ------------------------ */
+.mainvisual__pic {
+    background: url(../img/mv/top22.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 860px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.mainvisual__logo {
+    background: url(../img/Haco_logo.png) no-repeat;
+    background-position: cover;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: -800px;
+    max-width: 410px;
+    height: 300px;
+    position: relative;
+}
+
+/* -------------------------------------------------- */
+
+
+main {
+    margin: 600px 3% 0 3%;
+    margin-top: 600px;
+}
+
+
+h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+ul {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 50px;
+    list-style-type: none;
+}
+
+
+h2,
+h3,
+ul,
+.text-container__inner--center,
+.text-container__inner--left,
+b,
+.Hayama__text,
+.map__text,
+.footer__text {
+    font-family: "Yu Mincho",
+        "YuMincho",
+        serif;
+}
+
+/*-------------------- section haco ↓ ----------------- */
+.Haco {
+    margin: 0 2% 150px 2%;
+}
+
+.Haco-infinity-slide {
+    display: flex;
+    margin-bottom: 50px;
+    overflow: hidden;
+    width: auto;
+}
+
+.infinity-slide-list {
+    animation: infinity-loop 35s infinite linear 1s both;
+    display: flex;
+    height: 200px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.infinity-slide-list__item {
+    height: 100%;
+    margin-left: 100px;
+    width: auto;
+}
+
+@keyframes infinity-loop {
+    from {
+        transform: translateX(0vw);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.text-container__inner--center {
+    font-size: 1.1rem;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+/* --------------------- section Brk ↓ -------------------- */
+
+.Brk {
+    margin-bottom: 150px;
+}
+
+.Brk-grid {
+    margin-bottom: 100px;
+}
+
+.Brk-slide-container {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Brk-slide {
+    height: 400px;
+    margin-left: 20%;
+    position: absolute;
+    top: 35px;
+}
+
+.Brk-slide .item__unit {
+    background: url(../img/Haco/Haco_a.jpg)no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: absolute;
+    transform: rotate(30deg);
+    width: 220px;
+}
+
+.Brk-slide .item__unit2 {
+    background: url(../img/Haco/Haco_b.jpg)no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: absolute;
+    transform: rotate(-30deg);
+    width: 220px;
+}
+
+.Brk-slide .item__unit3 {
+    background: url(../img/Haco/Haco_c.jpg)no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: absolute;
+    transform: rotate(10deg);
+    width: 220px;
+}
+
+.btn {
+    display: flex;
+    margin-left: 180px;
+    transform: rotate(-3deg);
+    width: 50px;
+}
+
+.btn__next,
+.btn__back {
+    height: 80px;
+    width: 80px;
+}
+
+
+.add_style,
+.add_style2,
+.add_style3 {
+    transform: translateX(200px);
+}
+
+.Brk-slide-item,
+.Brk-slide-item2,
+.Brk-slide-item3 {
+    position: absolute;
+    transition: all 1s;
+}
+
+.layer {
+    z-index: 1
+}
+
+.layer2 {
+    z-index: 2
+}
+
+.layer3 {
+    z-index: 3
+}
+
+
+.Brk-text-container {
+    margin: 5%;
+    text-align: left;
+}
+
+.text-container__inner--left {
+    font-size: 1.25rem;
+    line-height: 40px;
+}
+
+/* ------------------- Brk-grid section ↓ ------------------------ */
+.Broken-grid {
+    display: grid;
+    grid-gap: 100px 0;
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+}
+
+.grid-item {
+    background-color: #262B32;
+    height: 450px;
+    width: 340px;
+}
+
+.grid-item2 {
+    background-color: #4F5B64;
+    height: 420px;
+    width: 320px;
+}
+
+.position_test {
+    position: relative
+}
+
+.grid-item3 {
+    background-color: #262B32;
+    height: 350px;
+    position: absolute;
+    right: 15px;
+    top: 100px;
+    width: 330px;
+}
+
+.grid-item3_5 {
+    background-color: #4F5B64;
+    height: 400px;
+    width: 330px;
+}
+
+b {
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.s_order_list {
+    margin-top: 20%;
+}
+
+.grid-item__pic {
+    background: url(../img/brk/brk_b.jpg)no-repeat;
+    background-size: cover;
+    height: 220px;
+    margin: 10% 0 5% 10%;
+    max-width: 350px;
+    width: 80vw;
+}
+
+.grid-item__pic2 {
+    background: url(../img/brk/brk_c.jpg)no-repeat;
+    background-size: cover;
+    height: 220px;
+    margin: 5% 10% 5% 0;
+    max-width: 350px;
+    width: 80vw;
+}
+
+/* ------------------- Hayama section ↓--------------------------- */
+.Hayama {
+    margin-bottom: 150px;
+}
+
+.Hayama-slide-container {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Hayama-slide {
+    height: 400px;
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.Hayama-slide .Hayama_img {
+    background: url(../img/hayama/hayama_a.jpg) no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: absolute;
+    transform: rotate(3deg);
+    width: 220px;
+}
+
+.Hayama-slide .Hayama_img2 {
+    background: url(../img/hayama/hayama_b.jpg) no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: absolute;
+    transform: rotate(-10deg);
+    width: 220px;
+}
+
+.Hayama-slide .Hayama_img3 {
+    background: url(../img/hayama/hayama_c.jpg);
+    background-size: cover;
+    height: 300px;
+    position: absolute;
+    transform: rotate(15deg);
+    width: 220px;
+}
+
+.mezirusi,
+.mezirusi2,
+.mezirusi3 {
+    position: absolute;
+    transition: all 1s;
+}
+
+.Hayama-text-box {
+    margin: 5%;
+    text-align: left;
+}
+
+.Hayama__text {
+    font-size: 1rem;
+    line-height: 40px;
+    margin-bottom: 100px;
+}
+
+
+.grid-item4 {
+    background-color: #7D6C68;
+    height: 450px;
+    width: 330px;
+}
+
+.grid-item5 {
+    background-color: #4F5B64;
+    height: 450px;
+    width: 330px;
+}
+
+.Hayama__pic {
+    background: url(../img/hayama/hayama_e.jpg)no-repeat;
+    background-size: cover;
+    height: 230px;
+    margin: 5% 0 5% 13%;
+    max-width: 350px;
+    width: 80vw;
+}
+
+.Hayama__pic2 {
+    background: url(../img/hayama/hayama_a.jpg)no-repeat;
+    background-size: cover;
+    height: 220px;
+    margin: 5% 10% 5% 1%;
+    max-width: 350px;
+    width: 80vw;
+}
+
+/*--------------- map section ↓ ----------- */
+.map {
+    margin-bottom: 100px;
+}
+
+.map__text {
+    font-size: 1.1rem;
+    line-height: 40px;
+}
+
+
+#modal-main {
+    background-color: #ffffff;
+    border: solid 2px black;
+    color: #666666;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 350px;
+    z-index: 120;
+}
+
+.txt {
+    margin: 0 30px;
+}
+
+#modal-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.modal_title {
+    border-bottom: 2px solid black;
+    font-size: 30px;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.modal_pic {
+    height: 250px;
+    margin: 25px;
+    text-align: center;
+    width: 300px;
+}
+
+
+#map {
+    height: 300px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* --------------- footer section ↓ ---------- */
+#footer {
+    border-top: solid black 0.5px;
+    height: 150px;
+}
+
+.footer_text {
+    text-align: center;
+    padding: 0;
+}
+
+.footer_text a {
+    color: black;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+    .mainvisual__pic {
+        height: 900px;
+        width: 100%;
+    }
+
+    .add_style,
+    .add_style2,
+    .add_style3 {
+        transform: translateX(250px);
+    }
+
+    .Haco-infinity-slide {
+        margin-bottom: 100px;
+    }
+
+    .Brk-grid {
+        display: grid;
+        grid-template-areas:
+            "pic tet"
+            "btn text";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Brk-slide-container {
+        grid-area: pic;
+    }
+
+    .Brk-slide {
+        right: 500px;
+    }
+
+    .btn {
+        grid-area: btn;
+        margin-left: 450px
+    }
+
+    .text-container__inner--left {
+        grid-area: text;
+    }
+
+    /* -------------- Brk-grid section ↓ -------------- */
+    .Broken-grid {
+        grid-gap: 100px 3.125vw;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 250px);
+        margin: 0;
+    }
+
+    .grid-item {
+        align-self: flex-start;
+        grid-column: 2/-5;
+        grid-row: 1;
+    }
+
+    .grid-item2 {
+        align-self: flex-end;
+        grid-column: 9/span 3;
+        grid-row: 2;
+    }
+
+
+    .grid-item3 {
+        align-self: center;
+        grid-column: 5/span 3;
+        grid-row: 3;
+    }
+
+    .position_test {
+        grid-column: 5/span 3;
+        grid-row: 3;
+    }
+
+    .grid-item3_5 {
+        align-self: flex-end;
+        grid-column: 6/7;
+        grid-row: 3;
+        position: relative;
+        z-index: -1
+    }
+
+    .grid-item__pic {
+        margin: 10% 0 5% 20%;
+    }
+
+    .grid-item__pic2 {
+        margin: 5% 0 5% -15%;
+    }
+
+    /* ---------------Hayama section ↓-------------- */
+    .Hayama {
+        margin-top: 300px;
+    }
+
+    .Hayama-grid {
+        display: grid;
+        grid-template-areas:
+            "pic2 text2"
+            "btn text2";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Hayama__title {
+        position: relative;
+        top: 60px;
+    }
+
+    .Hayama-slide-container {
+        grid-area: pic2;
+    }
+
+    .Hayama-slide {
+        right: 500px;
+    }
+
+    .Hayama__text {
+        grid-area: text2;
+    }
+
+    .grid-item4 {
+        align-self: flex-end;
+        grid-column: 2/4;
+        grid-row: 2;
+    }
+
+    .grid-item5 {
+        grid-column: 8/10;
+        grid-row: 2
+    }
+
+    .Hayama__pic {
+        margin: 5% 0 5% 15%;
+    }
+
+    .Hayama__pic2 {
+        margin: 5% 10% 5% -15%;
+    }
+
+    /* -------------- map section ↓----------------- */
+
+    .map-grid {
+        display: grid;
+        grid-template-areas:
+            "map text3";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .map__text__box {
+        grid-area: text3;
+    }
+
+    .map-text-container {
+        margin: 30% 0;
+    }
+
+    .map__text {
+        font-size: 1.1rem;
+        line-height: 40px;
+    }
+
+    #modal-main {
+        height: 550px;
+        margin: 0;
+        width: 500px;
+    }
+
+    .modal_title {
+        font-size: 30px;
+    }
+
+    .modal_pic {
+        display: block;
+        height: 250px;
+        margin: 20px auto;
+        width: 380px;
+    }
+
+    #map {
+        grid-area: map;
+        height: 500px;
+    }
+
+}
+
+@media (min-width: 1024px) {}
