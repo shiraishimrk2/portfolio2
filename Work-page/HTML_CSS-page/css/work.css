@@ -141,16 +141,16 @@ figure {
 }
 
 .pic1 {
-    background: url(../img/common_img/morito.jpg)no-repeat;
+    background: url(../../../img/common_img/morito.jpg)no-repeat;
 
 }
 
 .pic2 {
-    background: url(../img/common_img/siosai.jpg)no-repeat;
+    background: url(../../../img/common_img/siosai.jpg)no-repeat;
 }
 
 .pic3 {
-    background: url(../img/common_img/hayamakouen.jpg)no-repeat;
+    background: url(../../../img/common_img/hayamakouen.jpg)no-repeat;
 }
 
 .pic1,
