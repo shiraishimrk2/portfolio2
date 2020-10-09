@@ -88,13 +88,14 @@ h2 span::after {
     text-align: center;
 }
 
+.face-pic-circle {
+    border-radius: 50%;
+}
+
 .Self-introduction-grid__profile {
     margin-top: 50px;
 }
 
-.face-pic-circle {
-    border-radius: 50%;
-}
 
 .Self-introduction-grid__profile-container {
     border: solid 0.7px #707070;
@@ -247,7 +248,7 @@ dt {
 
 
     .Self-introduction-grid,
-    .Work__grid {
+    .Work-grid {
         display: grid;
         grid-template-columns: 1fr 1fr
     }

@@ -1,0 +1,498 @@
+html {
+    height: 100%
+}
+
+body {
+    background-color: #EEEEEE;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    background-color: white;
+    margin: 0 auto;
+    padding: 2% 0;
+    text-align: center;
+    width: 100%;
+}
+
+.main {
+    /* border: solid black 1px; */
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 98%;
+}
+
+.inner {
+    margin: 5% 2%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#footer {
+    background-color: white;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* ------------ modal ↓ ----------- */
+
+
+.img-box {
+    background-color: black;
+    height: 220px;
+    margin: 0 auto 30% auto;
+    max-width: 320px;
+    min-width: 300px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.img {
+    display: block;
+    height: 220px;
+    max-width: 320px;
+    min-width: 300px;
+    transition: 2.0s;
+    width: 100%;
+}
+
+.img:hover {
+    opacity: 0.6;
+    transform: scale(1.4);
+}
+
+/* ---------- html&css ↓ ----------- */
+.animation,
+.mouseover {
+    margin-bottom: 10%;
+}
+
+/* --------------- animation slide ↓ ---------------- */
+.animation-slide {
+    display: flex;
+    overflow: hidden;
+    width: auto;
+}
+
+.slide_img img {
+    height: 220px;
+    margin-left: 130px;
+    width: auto;
+}
+
+.slide_img {
+    animation: infinity 20s infinite linear both;
+    display: flex;
+    position: relative;
+}
+
+@keyframes infinity {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* --------------- img ホバー ↓ ------------- */
+
+
+.img-box {
+    background-color: black;
+    height: 220px;
+    margin: 0 10% 30% 0;
+    max-width: 350px;
+    min-width: 300px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.img {
+    display: block;
+    height: 220px;
+    max-width: 350px;
+    min-width: 300px;
+    transition: 2.0s;
+    width: 100%;
+}
+
+.img:hover {
+    opacity: 0.6;
+    transform: scale(1.4);
+}
+
+
+/* ----------------- no neme ↓ ------------- */
+
+figure {
+    height: 220px;
+    margin: 0 0 10% 0;
+    max-width: 350px;
+    min-width: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.pic1 {
+    background: url(../img/common_img/morito.jpg)no-repeat;
+
+}
+
+.pic2 {
+    background: url(../img/common_img/siosai.jpg)no-repeat;
+}
+
+.pic3 {
+    background: url(../img/common_img/hayamakouen.jpg)no-repeat;
+}
+
+.pic1,
+.pic2,
+.pic3 {
+    background-color: black;
+    background-size: cover;
+    height: 220px;
+    margin-right: 0;
+    max-width: 350px;
+    min-width: 300px;
+    width: 100%;
+}
+
+figcaption {
+    background-color: white;
+    bottom: -20px;
+    height: 100%;
+    max-width: 350px;
+    min-width: 300px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    width: 100%;
+    z-index: 2;
+}
+
+h3,
+p {
+    margin: 5% 3%
+}
+
+figure:hover figcaption {
+    bottom: 0px;
+    opacity: 0.9
+}
+
+/* ---------- JavaScript ↓ ---------- */
+/* ------------ modal ↓ ----------- */
+.modal p {
+    margin: 0;
+}
+
+.modal,
+.img_global-box {
+    margin-bottom: 10%
+}
+
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.modal-box {
+    background-color: white;
+    display: block;
+    height: 300px;
+    margin: 50% auto;
+    position: relative;
+    width: 300px;
+    z-index: 101;
+}
+
+.modal-pic {
+    height: 90%;
+    margin: 5%;
+    position: absolute;
+    width: 90%;
+}
+
+/* ----------------- slide ↓ ----------------- */
+.img_global-box {
+    overflow: hidden;
+}
+
+.img-slide {
+    height: 400px;
+    margin-left: 60px;
+    position: relative;
+    top: 35px;
+    width: 200px;
+}
+
+.img_local-box {
+    position: absolute;
+    transition: all 1s;
+}
+
+.slide-img1 {
+    background: url(../img/common_img/hayama_a.jpg)no-repeat;
+    transform: rotate(30deg);
+}
+
+.slide-img2 {
+    background: url(../img/common_img/hayama_b.jpg)no-repeat;
+    transform: rotate(-30deg)
+}
+
+.slide-img3 {
+    background: url(../img/common_img/hayama_c.jpg)no-repeat;
+    transform: rotate(10deg)
+}
+
+.slide-img1,
+.slide-img2,
+.slide-img3 {
+    background-size: cover;
+    border: solid 8px #f0f8ff;
+    height: 280px;
+    position: absolute;
+    width: 200px;
+}
+
+.yazirusi {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 180px;
+    transform: rotate(3deg);
+    width: 50px;
+}
+
+.move {
+    height: 80px;
+    margin-right: 30px;
+    width: 100%;
+}
+
+.add_style {
+    transform: translateX(350px);
+}
+
+
+.layer {
+    z-index: 1
+}
+
+.layer2 {
+    z-index: 2
+}
+
+.layer3 {
+    z-index: 3
+}
+
+/* --------------- fead-in ↓ ------------ */
+
+.box {
+    border: solid 3px;
+    height: 300px;
+    margin-bottom: 150px;
+    opacity: 0;
+    overflow: hidden;
+    text-align: center;
+    transform: translate(40px, 90px);
+    transition: all 500ms;
+    width: 90%;
+}
+
+.box.show {
+    opacity: 1;
+    transform: translate(0, 0)
+}
+
+/* ---------- font ↓ ---------- */
+h1 {
+    font-size: 2.3rem;
+}
+
+h1,
+h2 {
+    font-family: "Helvetica Neue",
+        "Helvetica",
+        "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN",
+        "Arial",
+        "Yu Gothic",
+        "Meiryo",
+        sans-serif;
+}
+
+h2 {
+    font-size: 1.7rem
+}
+
+#footer h2 {
+    font-size: 1.3rem
+}
+
+
+#footer a {
+    font-size: 19px;
+}
+
+
+
+@media(min-width:768px) {
+
+    .unit {
+        display: flex;
+    }
+
+    .img-box {
+        height: 250px;
+        margin: 0 10% 0 0;
+        max-width: 350px;
+        min-width: 300px;
+        width: 100%;
+    }
+
+    .img {
+        max-width: 350px;
+        min-width: 300px;
+        height: 250px;
+        width: 100%;
+    }
+
+
+    .modal-box {
+        height: 500px;
+        margin: 10% auto;
+        width: 500px;
+    }
+
+    .modal-pic {
+        height: 90%;
+        width: 90%;
+    }
+
+    .slide-img1,
+    .slide-img2,
+    .slide-img3 {
+        height: 320px;
+        width: 230px;
+    }
+
+
+    .unit {
+        display: flex;
+    }
+
+    .img-box {
+        height: 250px;
+        margin: 0 10% 0 0;
+        width: 350px;
+    }
+
+    .img {
+        height: 250px;
+        width: 350px;
+    }
+
+    .modal-box {
+        height: 500px;
+        margin: 10% auto;
+        width: 500px;
+    }
+
+    .modal-pic {
+        height: 90%;
+        width: 90%;
+    }
+
+    .slide-img1,
+    .slide-img2,
+    .slide-img3 {
+        height: 320px;
+        width: 230px;
+    }
+
+    #footer {
+        position: relative;
+    }
+
+    #footer a {
+        left: 0;
+        margin-left: 3%;
+        position: absolute;
+        top: 0;
+    }
+
+
+    /* -------- html&css ↓ -------- */
+    .unit,
+    .flex,
+    .figure {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .slide_img img {
+        height: 250px;
+    }
+
+    figure,
+    .pic1,
+    .pic2,
+    .pic3 {
+        height: 250px;
+    }
+
+
+    /* ------- JavaScript ↓ ----- */
+    .unit {
+        display: flex;
+    }
+
+    .img-box {
+        height: 250px;
+        margin: 0 10% 0 0;
+        max-width: 350px;
+        min-width: 300px;
+        width: 100%;
+    }
+
+    .img {
+        height: 250px;
+        max-width: 350px;
+        min-width: 300px;
+        width: 100%;
+    }
+
+
+    .modal-box {
+        height: 500px;
+        margin: 10% auto;
+        width: 500px;
+    }
+
+    .modal-pic {
+        height: 90%;
+        width: 90%;
+    }
+
+    .slide-img1,
+    .slide-img2,
+    .slide-img3 {
+        height: 320px;
+        width: 230px;
+    }
+}
